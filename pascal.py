@@ -28,9 +28,9 @@ class Solution:
         # type row: int
         # return type: list[list[int]]
         tri = [[1]]
-        # TODO: Write code below to return a nested list with the solution to the prompt
+
         for _ in range(rows):
-            tri.append(x+y fpr x,y in zip(tri[-1] + [0] + [0] + tri[-1]))
+            tri.append([x+y for x,y in zip(tri[-1] +[0], [0] + tri[-1])])
         return tri[:rows]
         
 def main():
